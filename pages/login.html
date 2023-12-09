@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estilo Relax - Productos</title>
+    <title>Estilo Relax - Login</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
-<!-- Pagina de productos -->
 <body>
     <header class="ordenamiento-navbar">
         <div class="conteiner-logo">
@@ -26,24 +25,25 @@
             </nav>
         </div>
     </header>
-    <main>
-        <section>
-            <h1>CONOCE NUESTROS PRODUCTOS DE PRIMERA CALIDAD</h1>
+    <main class="seccion-login">
+        <div>
+            <h1>ACCEDE AL SISTEMA DE GESTIÓN</h1>
+        </div>
+        <form action="" id="form">
             <div>
                 <div>
-                    <!-- poner tres productos con cards -->
+                    <label for="email">Email:</label>
                 </div>
-                <div>
-                    <!-- poner tres productos con cards -->
-                </div>
-                <div>
-                    <!-- poner tres productos con cards -->
-                </div>
-                <div>
-                    <!-- poner tres productos con cards -->
-                </div>
+                <input type="email" id="email" name="email" required>
             </div>
-        </section>
+            <div>
+                <div>
+                    <label for="pass">Contraseña:</label>
+                </div>
+                <input type="password" id="pass" name="contraseña" required>
+            </div>
+            <button type="button" class="boton-login" onclick="login()">INICIAR SESIÓN</button>
+        </form>
     </main>
     <footer class="pie-pagina">
         <div class="secciones-pie-pagina">
@@ -65,5 +65,6 @@
             <p style="color: white; font-size: 15px;">© 2024 Estilo Relax Argentina</p>
         </div>
     </footer>
+    <script src="../js/app.js"></script>
 </body>
 </html>
